@@ -45,7 +45,7 @@ class App extends Component {
           dateTime={dateTime}
           gpsLatitude={gpsLatitude}
           gpsLatitudeRef={gpsLatitudeRef}
-          gpsLongitude={gpsLatitude}
+          gpsLongitude={gpsLongitude}
           gpsLongitudeRef={gpsLongitudeRef}
           />
           <ColorSwatches colors={colors}/>
