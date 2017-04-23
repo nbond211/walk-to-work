@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import '../styles/top-bar.css';
+import formatDatetime from '../utils/format-datetime';
 
 class TopBar extends Component {
   static propTypes = {
@@ -11,8 +12,9 @@ class TopBar extends Component {
   }
 
   render() {
+      console.log(this.props.dateTime);
     return (
-        <div>TopBar</div>
+        <div>{formatDatetime(this.props.dateTime)}</div>
     );
   }
 }
