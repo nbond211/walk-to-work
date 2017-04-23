@@ -34,18 +34,25 @@ class App extends Component {
   }
 
   render() {
-    const photo = photoData[photos[this.state.index]];
+    const {index} = this.state;
+    const photo = photoData[photos[index]];
     const {colors, dateTime, gpsLatitude, gpsLatitudeRef, gpsLongitude, gpsLongitudeRef} = photo;
 
     return (
       <div className="container">
         <div className="main-panel">
-          <TopBar/>
-          <ColorSwatches/>
+          <TopBar
+          dateTime={dateTime}
+          gpsLatitude={gpsLatitude}
+          gpsLatitudeRef={gpsLatitudeRef}
+          gpsLongitude={gpsLatitude}
+          gpsLongitudeRef={gpsLongitudeRef}
+          />
+          <ColorSwatches colors={colors}/>
         </div>
         <div className="side-panel">
-          <PrevButton/>
-          <NextButton/>
+          <PrevButton prevPhoto={this.prevPhoto} active={index > 0}/>
+          <NextButton nextPhoto={this.NextPhoto} active={index < maxIndex}/>
         </div>
       </div>
     );
