@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
 import photoData from '../photo-data';
-import TopBar from './TopBar';
-import ColorSwatches from './ColorSwatches';
-import PrevButton from './PrevButton';
-import NextButton from './NextButton';
+import TopBar from './top-bar';
+import ColorSwatches from './color-swatches';
+import PrevButton from './prev-button';
+import NextButton from './next-button';
 
 const photos = Object.getOwnPropertyNames(photoData);
 const maxIndex = photos.length - 1;
