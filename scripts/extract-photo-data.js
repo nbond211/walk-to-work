@@ -3,6 +3,7 @@ import exif from 'jpeg-exif';
 import getColors from 'get-image-colors';
 import jsonfile from 'jsonfile';
 
+
 async function getFileNames() {
     const photos = await fs.readdirSync('./photos');
     return photos;
@@ -40,7 +41,7 @@ async function createPhotoDataObject() {
 }
 
 async function writePhotoDataToFile(photoData) {
-    await jsonfile.writeFileSync('./public/photo-data.json', photoData, {spaces: 2});
+    await jsonfile.writeFileSync('./src/photo-data.json', photoData, {spaces: 2});
 }
 
 export default async function extractPhotoData() {

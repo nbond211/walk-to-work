@@ -6,8 +6,6 @@
   "author": "nbond211 <nbond211@verizon.net>",
   "license": "MIT",
   "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
@@ -19,7 +17,9 @@
     "fs": "^0.0.1-security",
     "get-image-colors": "^1.8.1",
     "jpeg-exif": "^1.0.6",
-    "jsonfile": "^2.4.0"
+    "jsonfile": "^2.4.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
