@@ -40,7 +40,7 @@ async function createPhotoDataObject() {
 }
 
 async function writePhotoDataToFile(photoData) {
-    await jsonfile.writeFileSync('./photo-data.json', photoData, {spaces: 2});
+    await jsonfile.writeFileSync('./public/photo-data.json', photoData, {spaces: 2});
 }
 
 export default async function extractPhotoData() {
