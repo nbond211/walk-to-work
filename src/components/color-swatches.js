@@ -11,7 +11,7 @@ class ColorSwatches extends Component {
       const {colors} = this.props;
       const colorSwatches = colors.map((key, index) => {
           return (
-              <ColorSwatch key={key} index={index} color={colors[index]}/>
+              <ColorSwatch key={key} color={colors[index]}/>
           );
       });
     return (
