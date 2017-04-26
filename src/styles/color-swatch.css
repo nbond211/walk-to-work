@@ -1,0 +1,15 @@
+.color-box {
+    height: 250px;
+    width: 250px;
+    border-right-style: solid;
+    border-right-width: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 10px;
+}
+
+.color-label {
+    border-bottom-style: solid;
+    border-bottom-width: 10px;
+    border-right-style: solid;
+    border-right-width: 10px;
+}

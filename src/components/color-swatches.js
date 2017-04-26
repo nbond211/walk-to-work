@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import ColorSwatch from './color-swatch';
 import '../styles/color-swatches.css';
 
 class ColorSwatches extends Component {
@@ -7,8 +8,16 @@ class ColorSwatches extends Component {
   }
 
   render() {
+      const {colors} = this.props;
+      const colorSwatches = colors.map((key, index) => {
+          return (
+              <ColorSwatch key={key} index={index} color={colors[index]}/>
+          );
+      });
     return (
-        <div></div>
+        <div className="color-swatches-container">
+            {colorSwatches}
+        </div>
     );
   }
 }
