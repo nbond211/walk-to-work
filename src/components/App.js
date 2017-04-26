@@ -40,19 +40,17 @@ class App extends Component {
 
     return (
       <div className="container">
-        <div className="main-panel">
-          <TopBar
-          dateTime={dateTime}
-          gpsLatitude={gpsLatitude}
-          gpsLatitudeRef={gpsLatitudeRef}
-          gpsLongitude={gpsLongitude}
-          gpsLongitudeRef={gpsLongitudeRef}
-          />
-          <ColorSwatches colors={colors}/>
-        </div>
-        <div className="side-panel">
-          <PrevButton prevPhoto={this.prevPhoto} active={index > 0}/>
-          <NextButton nextPhoto={this.NextPhoto} active={index < maxIndex}/>
+        <TopBar
+        dateTime={dateTime}
+        gpsLatitude={gpsLatitude}
+        gpsLatitudeRef={gpsLatitudeRef}
+        gpsLongitude={gpsLongitude}
+        gpsLongitudeRef={gpsLongitudeRef}
+        />
+        <ColorSwatches colors={colors}/>
+        <div className="bottom-row">
+          <PrevButton prevPhoto={this.prevPhoto} active={index > 0}/>  
+          <NextButton nextPhoto={this.nextPhoto} active={index < maxIndex}/>
         </div>
       </div>
     );

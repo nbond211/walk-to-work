@@ -9,7 +9,7 @@ class PrevButton extends Component {
 
   render() {
     return (
-        <div></div>
+        <button onClick={this.props.prevPhoto} className="prev-button">Prev</button>
     );
   }
 }

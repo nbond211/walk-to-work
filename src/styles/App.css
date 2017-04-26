@@ -1,3 +1,5 @@
-.main-panel {
-    width: 100%;
+.bottom-row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
 }

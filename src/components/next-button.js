@@ -9,7 +9,7 @@ class NextButton extends Component {
 
   render() {
     return (
-        <div></div>
+        <button onClick={this.props.nextPhoto} className="next-button">Next</button>
     );
   }
 }

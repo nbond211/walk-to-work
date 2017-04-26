@@ -1,0 +1,10 @@
+.prev-button {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #000;
+    box-sizing: content-box;
+    padding: 0;
+}
