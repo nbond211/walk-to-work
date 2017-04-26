@@ -8,7 +8,7 @@ class ColorSwatch extends Component {
 
   render() {
     return (
-        <div>ColorSwatch</div>
+        <div></div>
     );
   }
 }

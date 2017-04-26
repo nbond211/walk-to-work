@@ -9,7 +9,7 @@ class PrevButton extends Component {
 
   render() {
     return (
-        <div>PrevButton</div>
+        <div></div>
     );
   }
 }

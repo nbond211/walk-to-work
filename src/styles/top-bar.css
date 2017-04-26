@@ -1,0 +1,24 @@
+.topBar {
+    border-style: solid;
+    border-width: 10px;
+    height: 100px;
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dateTimeContainer {
+    display: flex;
+    align-items: center;
+    border-right-style: solid;
+    border-right-width: 10px;
+    height: 60px;
+    padding: 25px;
+}
+
+.gpsContainer {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}

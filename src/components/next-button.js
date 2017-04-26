@@ -9,7 +9,7 @@ class NextButton extends Component {
 
   render() {
     return (
-        <div>NextButton</div>
+        <div></div>
     );
   }
 }
