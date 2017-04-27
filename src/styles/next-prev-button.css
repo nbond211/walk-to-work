@@ -1,0 +1,19 @@
+.next-prev-button {
+    border-style: none;
+    box-sizing: content-box;
+    background-color: Transparent;
+    outline: none;
+    padding: 0;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-icon {
+    font-size: 100px;
+    transition: all .3s;
+}
+
+.arrow-icon:hover {
+    font-size: 150px;
+}

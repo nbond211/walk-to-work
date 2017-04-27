@@ -47,9 +47,9 @@ class App extends Component {
         gpsLongitude={gpsLongitude}
         gpsLongitudeRef={gpsLongitudeRef}
         />
-        <ColorSwatches colors={colors}/>
         <div className="bottom-row">
-          <PrevButton prevPhoto={this.prevPhoto} active={index > 0}/>  
+          <PrevButton prevPhoto={this.prevPhoto} active={index > 0}/>
+          <ColorSwatches colors={colors}/>
           <NextButton nextPhoto={this.nextPhoto} active={index < maxIndex}/>
         </div>
       </div>

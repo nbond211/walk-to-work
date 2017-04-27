@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import '../styles/prev-button.css';
+import '../styles/next-prev-button.css';
 
 class PrevButton extends Component {
   static propTypes = {
@@ -9,7 +9,9 @@ class PrevButton extends Component {
 
   render() {
     return (
-        <button onClick={this.props.prevPhoto} className="prev-button">Prev</button>
+        <button onClick={this.props.prevPhoto} className="next-prev-button">
+          <i className="material-icons arrow-icon">chevron_left</i>
+        </button>
     );
   }
 }
