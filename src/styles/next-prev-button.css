@@ -4,14 +4,14 @@
     background-color: Transparent;
     outline: none;
     padding: 0;
-    cursor:pointer;
+    cursor: pointer;
     display: flex;
     align-items: center;
 }
 
 .arrow-icon {
     font-size: 100px;
-    transition: all .3s;
+    transition: all .5s;
 }
 
 .arrow-icon:hover {

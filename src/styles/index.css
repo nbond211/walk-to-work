@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
-  margin: 50px;
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-left: 25px;
   padding: 0;
   font-family: 'Inconsolata', monospace;
   font-size: 25px;

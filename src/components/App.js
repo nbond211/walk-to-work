@@ -33,6 +33,12 @@ class App extends Component {
     }
   }
 
+  autoPlay = () => {
+    window.setInterval(function(){
+      this.nextPhoto();
+}, 1000);
+  }
+
   render() {
     const {index} = this.state;
     const photo = photoData[photos[index]];
@@ -40,6 +46,23 @@ class App extends Component {
 
     return (
       <div className="container">
+        <div className="top-menu">
+          <button className="button">
+            <i className="material-icons button-icon">info_outline</i>
+          </button>
+          <button className="button">
+            <i className="material-icons button-icon">pause_circle_outline</i>
+          </button>
+          <button className="button">
+            <i className="material-icons button-icon">play_circle_outline</i>
+          </button>
+          <button className="button">
+            <i className="material-icons button-icon">view_week</i>
+          </button>
+          <button className="button">
+            <i className="material-icons button-icon">grid_on</i>
+          </button>
+        </div>
         <TopBar
         dateTime={dateTime}
         gpsLatitude={gpsLatitude}
