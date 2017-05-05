@@ -24,6 +24,8 @@ class App extends Component {
     if (currentIndex < maxIndex) {
       const newIndex = currentIndex + 1;
       this.setState({index: newIndex});
+    } else {
+      this.setState({index: 0});
     }
   }
 
@@ -32,6 +34,8 @@ class App extends Component {
     if (currentIndex > 0) {
       const newIndex = currentIndex - 1;
       this.setState({index: newIndex});
+    } else {
+      this.setState({index: maxIndex});
     }
     
   }
