@@ -3,6 +3,7 @@ import autoBind from 'react-autobind';
 import '../styles/App.css';
 import photoData from '../photo-data';
 import TopBar from './top-bar';
+import TopMenu from './top-menu';
 import ColorSwatches from './color-swatches';
 import PrevButton from './prev-button';
 import NextButton from './next-button';
@@ -83,45 +84,15 @@ class App extends Component {
     const photo = photoData[photos[index]];
     const {colors, dateTime, gpsLatitude, gpsLatitudeRef, gpsLongitude, gpsLongitudeRef} = photo;
 
-    let playButton;
-    if (isPlaying) {
-      playButton = (
-        <button onClick={this.pause} className="button">
-          <i className="material-icons button-icon">pause_circle_outline</i>
-        </button>
-      );
-    } else {
-      playButton = (
-        <button onClick={this.autoPlay} className="button">
-          <i className="material-icons button-icon">play_circle_outline</i>
-        </button>
-      )
-    }
-
-    let gridButton;
-    if (isGridView) {
-      gridButton = (
-        <button onClick={this.toggleGridView} className="button">
-          <i className="material-icons button-icon">view_week</i>
-        </button>
-      );
-    } else {
-      gridButton = (
-        <button onClick={this.toggleGridView} className="button">
-          <i className="material-icons button-icon">grid_on</i>
-        </button>
-      )
-    }
-
     return (
       <div className="container">
-        <div className="top-menu">
-          <button className="button">
-            <i className="material-icons button-icon">info_outline</i>
-          </button>
-          {playButton}
-          {gridButton}
-        </div>
+        <TopMenu
+          isPlaying={isPlaying}
+          isGridView={isGridView}
+          pause={this.pause}
+          autoPlay={this.autoPlay}
+          toggleGridView={this.toggleGridView} 
+        />
         <TopBar
           dateTime={dateTime}
           gpsLatitude={gpsLatitude}
