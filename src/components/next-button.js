@@ -3,7 +3,6 @@ import '../styles/next-prev-button.css';
 
 class NextButton extends Component {
   static propTypes = {
-    active: PropTypes.bool.isRequired,
     nextPhoto: PropTypes.func.isRequired
   }
 

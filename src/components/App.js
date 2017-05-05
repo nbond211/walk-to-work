@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import autoBind from 'react-autobind';
 import '../styles/App.css';
 import photoData from '../photo-data';
@@ -37,17 +37,17 @@ class App extends Component {
     } else {
       this.setState({index: maxIndex});
     }
-    
+
   }
 
-  clickNext = () =>{
+  clickNext = () => {
     const {intervalId} = this.state;
     this.clearInterval(intervalId);
     this.setState({isPlaying: false});
     this.nextPhoto();
   }
 
-  clickPrev = () =>{
+  clickPrev = () => {
     const {intervalId} = this.state;
     this.clearInterval(intervalId);
     this.setState({isPlaying: false});
@@ -73,8 +73,13 @@ class App extends Component {
     }
   }
 
+  toggleGridView = () => {
+    const {isGridView} = this.state;
+    this.setState({isGridView: !isGridView});
+  }
+
   render() {
-    const {index, isPlaying} = this.state;
+    const {index, isPlaying, isGridView} = this.state;
     const photo = photoData[photos[index]];
     const {colors, dateTime, gpsLatitude, gpsLatitudeRef, gpsLongitude, gpsLongitudeRef} = photo;
 
@@ -93,31 +98,40 @@ class App extends Component {
       )
     }
 
+    let gridButton;
+    if (isGridView) {
+      gridButton = (
+        <button onClick={this.toggleGridView} className="button">
+          <i className="material-icons button-icon">view_week</i>
+        </button>
+      );
+    } else {
+      gridButton = (
+        <button onClick={this.toggleGridView} className="button">
+          <i className="material-icons button-icon">grid_on</i>
+        </button>
+      )
+    }
+
     return (
       <div className="container">
         <div className="top-menu">
           <button className="button">
             <i className="material-icons button-icon">info_outline</i>
           </button>
-          {playButton}  
-          <button className="button">
-            <i className="material-icons button-icon">view_week</i>
-          </button>
-          <button className="button">
-            <i className="material-icons button-icon">grid_on</i>
-          </button>
+          {playButton}
+          {gridButton}
         </div>
         <TopBar
-        dateTime={dateTime}
-        gpsLatitude={gpsLatitude}
-        gpsLatitudeRef={gpsLatitudeRef}
-        gpsLongitude={gpsLongitude}
-        gpsLongitudeRef={gpsLongitudeRef}
-        />
+          dateTime={dateTime}
+          gpsLatitude={gpsLatitude}
+          gpsLatitudeRef={gpsLatitudeRef}
+          gpsLongitude={gpsLongitude}
+          gpsLongitudeRef={gpsLongitudeRef}/>
         <div className="bottom-row">
-          <PrevButton prevPhoto={this.clickPrev} active={index > 0}/>
+          <PrevButton prevPhoto={this.clickPrev}/>
           <ColorSwatches colors={colors}/>
-          <NextButton nextPhoto={this.clickNext} active={index < maxIndex}/>
+          <NextButton nextPhoto={this.clickNext}/>
         </div>
       </div>
     );
