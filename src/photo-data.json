@@ -1164,5 +1164,203 @@
       "#a5bc9d",
       "#a69fb0"
     ]
+  },
+  "IMG_2311.JPG": {
+    "dateTime": "2017:04:24 08:39:10",
+    "gpsLatitudeRef": "N",
+    "gpsLatitude": [
+      40,
+      41,
+      41.05
+    ],
+    "gpsLongitudeRef": "W",
+    "gpsLongitude": [
+      73,
+      57,
+      15.59
+    ],
+    "colors": [
+      "#7b7369",
+      "#d8dde4",
+      "#1f2124",
+      "#b9bfb8",
+      "#a7aeb5"
+    ]
+  },
+  "IMG_2319.JPG": {
+    "dateTime": "2017:04:25 08:57:37",
+    "gpsLatitudeRef": "N",
+    "gpsLatitude": [
+      40,
+      41,
+      36.4
+    ],
+    "gpsLongitudeRef": "W",
+    "gpsLongitude": [
+      73,
+      58,
+      32.19
+    ],
+    "colors": [
+      "#413f38",
+      "#dbe0e5",
+      "#86817b",
+      "#a1a6a5",
+      "#9597a6"
+    ]
+  },
+  "IMG_2321.JPG": {
+    "dateTime": "2017:04:26 08:55:36",
+    "gpsLatitudeRef": "N",
+    "gpsLatitude": [
+      40,
+      41,
+      35.57
+    ],
+    "gpsLongitudeRef": "W",
+    "gpsLongitude": [
+      73,
+      58,
+      6.26
+    ],
+    "colors": [
+      "#3c3f3a",
+      "#e5e3e2",
+      "#938b82",
+      "#90a1a6",
+      "#a5aeab"
+    ]
+  },
+  "IMG_2330.JPG": {
+    "dateTime": "2017:04:27 09:03:25",
+    "gpsLatitudeRef": "N",
+    "gpsLatitude": [
+      40,
+      41,
+      36.86
+    ],
+    "gpsLongitudeRef": "W",
+    "gpsLongitude": [
+      73,
+      58,
+      38.04
+    ],
+    "colors": [
+      "#494c36",
+      "#dad8d5",
+      "#9a9280",
+      "#aba8a7",
+      "#b2b4a8"
+    ]
+  },
+  "IMG_2338.JPG": {
+    "dateTime": "2017:04:28 08:34:14",
+    "gpsLatitudeRef": "N",
+    "gpsLatitude": [
+      40,
+      41,
+      42.3
+    ],
+    "gpsLongitudeRef": "W",
+    "gpsLongitude": [
+      73,
+      57,
+      6.66
+    ],
+    "colors": [
+      "#363528",
+      "#e1e4db",
+      "#87805b",
+      "#a0a787",
+      "#91999d"
+    ]
+  },
+  "IMG_2352.JPG": {
+    "dateTime": "2017:05:01 08:24:07",
+    "gpsLatitudeRef": "N",
+    "gpsLatitude": [
+      40,
+      41,
+      37.48
+    ],
+    "gpsLongitudeRef": "W",
+    "gpsLongitude": [
+      73,
+      56,
+      45.65
+    ],
+    "colors": [
+      "#37392e",
+      "#e1dacc",
+      "#887f6a",
+      "#3c6eb1",
+      "#95a6a2"
+    ]
+  },
+  "IMG_2355.JPG": {
+    "dateTime": "2017:05:02 08:35:54",
+    "gpsLatitudeRef": "N",
+    "gpsLatitude": [
+      40,
+      41,
+      38.61
+    ],
+    "gpsLongitudeRef": "W",
+    "gpsLongitude": [
+      73,
+      57,
+      39.92
+    ],
+    "colors": [
+      "#4c6282",
+      "#dec0aa",
+      "#2e251c",
+      "#5b8ac5",
+      "#94b0ae"
+    ]
+  },
+  "IMG_2365.JPG": {
+    "dateTime": "2017:05:03 08:42:56",
+    "gpsLatitudeRef": "N",
+    "gpsLatitude": [
+      40,
+      41,
+      38.09
+    ],
+    "gpsLongitudeRef": "W",
+    "gpsLongitude": [
+      73,
+      57,
+      44.26
+    ],
+    "colors": [
+      "#b4ab9f",
+      "#283445",
+      "#52403d",
+      "#54759b",
+      "#665e3b"
+    ]
+  },
+  "IMG_2386.JPG": {
+    "dateTime": "2017:05:04 08:59:53",
+    "gpsLatitudeRef": "N",
+    "gpsLatitude": [
+      40,
+      41,
+      37.47
+    ],
+    "gpsLongitudeRef": "W",
+    "gpsLongitude": [
+      73,
+      58,
+      48.48
+    ],
+    "colors": [
+      "#3d3d3c",
+      "#d9ccb7",
+      "#938676",
+      "#6b82ae",
+      "#9fb775"
+    ]
   }
 }
