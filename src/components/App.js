@@ -3,6 +3,7 @@ import autoBind from 'react-autobind';
 import '../styles/App.css';
 import photoData from '../photo-data';
 import Day from './day';
+import GridView from './grid-view';
 import TopMenu from './top-menu';
 
 const photos = Object.getOwnPropertyNames(photoData);
@@ -81,7 +82,7 @@ class App extends Component {
     const photo = photoData[photos[index]];
 
     return (
-      <div className="container">
+      <div>
         <TopMenu
           isPlaying={isPlaying}
           isGridView={isGridView}
@@ -93,6 +94,9 @@ class App extends Component {
           photo={photo}
           clickPrev={this.clickPrev}
           clickNext={this.clickNext}
+        />
+        <GridView
+          photoData={photoData}
         />
       </div>
     );

@@ -14,6 +14,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
+    "contrast": "^1.0.1",
     "fs": "^0.0.1-security",
     "get-image-colors": "^1.8.1",
     "jpeg-exif": "^1.0.6",

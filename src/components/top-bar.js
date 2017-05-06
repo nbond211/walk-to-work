@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import '../styles/top-bar.css';
-import formatDatetime from '../utils/format-datetime';
+import {formatDateTime} from '../utils/format-datetime';
 import formatGPSCoords from '../utils/format-gps-coords';
 
 class TopBar extends Component {
@@ -17,7 +17,7 @@ class TopBar extends Component {
     return (
         <div className="topBar">
             <div className="dateTimeContainer">
-                <span>{formatDatetime(dateTime)}</span>
+                <span>{formatDateTime(dateTime)}</span>
             </div>
             <div className="gpsContainer">
                 <span>{formatGPSCoords(gpsLatitude)} {gpsLatitudeRef}&nbsp;</span>
