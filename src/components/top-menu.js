@@ -14,13 +14,13 @@ class TopMenu extends Component {
       const {isPlaying, isGridView, pause, autoPlay, toggleGridView} = this.props;
 
       let playButton;
-    if (isPlaying) {
+    if (isPlaying && !isGridView) {
       playButton = (
         <button onClick={pause} className="button">
           <i className="material-icons button-icon">pause_circle_outline</i>
         </button>
       );
-    } else {
+    } else if (!isGridView) {
       playButton = (
         <button onClick={autoPlay} className="button">
           <i className="material-icons button-icon">play_circle_outline</i>
