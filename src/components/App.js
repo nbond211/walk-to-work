@@ -2,11 +2,8 @@ import React, {Component} from 'react';
 import autoBind from 'react-autobind';
 import '../styles/App.css';
 import photoData from '../photo-data';
-import TopBar from './top-bar';
+import Day from './day';
 import TopMenu from './top-menu';
-import ColorSwatches from './color-swatches';
-import PrevButton from './prev-button';
-import NextButton from './next-button';
 
 const photos = Object.getOwnPropertyNames(photoData);
 const maxIndex = photos.length - 1;
@@ -82,7 +79,6 @@ class App extends Component {
   render() {
     const {index, isPlaying, isGridView} = this.state;
     const photo = photoData[photos[index]];
-    const {colors, dateTime, gpsLatitude, gpsLatitudeRef, gpsLongitude, gpsLongitudeRef} = photo;
 
     return (
       <div className="container">
@@ -93,17 +89,11 @@ class App extends Component {
           autoPlay={this.autoPlay}
           toggleGridView={this.toggleGridView} 
         />
-        <TopBar
-          dateTime={dateTime}
-          gpsLatitude={gpsLatitude}
-          gpsLatitudeRef={gpsLatitudeRef}
-          gpsLongitude={gpsLongitude}
-          gpsLongitudeRef={gpsLongitudeRef}/>
-        <div className="bottom-row">
-          <PrevButton prevPhoto={this.clickPrev}/>
-          <ColorSwatches colors={colors}/>
-          <NextButton nextPhoto={this.clickNext}/>
-        </div>
+        <Day
+          photo={photo}
+          clickPrev={this.clickPrev}
+          clickNext={this.clickNext}
+        />
       </div>
     );
   }
