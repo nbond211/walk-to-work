@@ -27,7 +27,7 @@ class GridView extends Component {
         });
 
         return (
-            <div className="row around-md around-lg">
+            <div className="row">
                 {tiles}
             </div>
         );

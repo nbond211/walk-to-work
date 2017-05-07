@@ -8,10 +8,9 @@ class ColorSwatch extends Component {
 
   render() {
       const {color} = this.props;
-      const style = {backgroundColor: this.props.color};
     return (
         <div className="color-container">
-            <div className="color-box" style={style}/>
+            <div className="color-box" style={{backgroundColor: color}}/>
             <div className="color-label">{color}</div>
         </div>
     );
