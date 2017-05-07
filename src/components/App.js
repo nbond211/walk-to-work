@@ -36,7 +36,10 @@ class App extends Component {
     } else {
       this.setState({index: maxIndex});
     }
+  }
 
+  setIndex = index => {
+    this.setState({index});
   }
 
   clickNext = () => {
@@ -90,14 +93,21 @@ class App extends Component {
           autoPlay={this.autoPlay}
           toggleGridView={this.toggleGridView} 
         />
+        {!isGridView &&
         <Day
           photo={photo}
           clickPrev={this.clickPrev}
           clickNext={this.clickNext}
         />
+        }
+        {isGridView &&
         <GridView
           photoData={photoData}
+          toggleGridView={this.toggleGridView}
+          setIndex={this.setIndex}
         />
+        }
+        
       </div>
     );
   }

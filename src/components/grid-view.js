@@ -7,6 +7,8 @@ import Tile from './tile';
 class GridView extends Component {
     static propTypes = {
         photoData: PropTypes.object.isRequired,
+        setIndex: PropTypes.func.isRequired,
+        toggleGridView: PropTypes.func.isRequired
     }
 
     constructor(props) {
@@ -16,13 +18,20 @@ class GridView extends Component {
   }
 
     render() {
-        const {photoData} = this.props;
+        const {photoData, setIndex, toggleGridView} = this.props;
 
-        const tiles = this.photos.map(photo => {
+        const tiles = this.photos.map((photo, index) => {
             const data = photoData[photo];
             const {colors, dateTime} = data;
             return (
-                <Tile key={photo} colors={colors} dateTime={dateTime}/>
+                <Tile 
+                key={photo}
+                index={index} 
+                colors={colors} 
+                dateTime={dateTime}
+                setIndex={setIndex}
+                toggleGridView={toggleGridView}
+                />
             );
         });
 
