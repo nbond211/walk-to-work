@@ -80,6 +80,16 @@ class App extends Component {
     this.setState({isGridView: !isGridView});
   }
 
+  componentDidMount() {
+    window.addEventListener('keydown', event => {
+      if (event.key === 'ArrowLeft') {
+        this.clickPrev();
+      } else if (event.key === 'ArrowRight') {
+        this.clickNext();
+      }
+    });
+  }
+
   render() {
     const {index, isPlaying, isGridView} = this.state;
     const photo = photoData[photos[index]];

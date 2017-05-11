@@ -11,7 +11,7 @@ class Tile extends Component {
         dateTime: PropTypes.string.isRequired,
         index: PropTypes.number.isRequired,
         toggleGridView: PropTypes.func.isRequired,
-        setIndex: PropTypes.func.isRequired
+        setIndex: PropTypes.func.isRequired,
     }
 
     constructor(props) {
