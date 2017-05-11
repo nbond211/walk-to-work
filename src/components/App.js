@@ -65,7 +65,9 @@ class App extends Component {
 
   pause = () => {
     const {intervalId} = this.state;
-    this.clearInterval(intervalId);
+    if (intervalId) {
+      this.clearInterval(intervalId);
+    }
     this.setState({isPlaying: false});
   }
 
@@ -115,6 +117,7 @@ class App extends Component {
           photoData={photoData}
           toggleGridView={this.toggleGridView}
           setIndex={this.setIndex}
+          pause={this.pause}
         />
         }
         

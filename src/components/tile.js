@@ -12,6 +12,7 @@ class Tile extends Component {
         index: PropTypes.number.isRequired,
         toggleGridView: PropTypes.func.isRequired,
         setIndex: PropTypes.func.isRequired,
+        pause: PropTypes.func.isRequired
     }
 
     constructor(props) {
@@ -22,6 +23,7 @@ class Tile extends Component {
   handleClick = () => {
       this.props.setIndex(this.props.index);
       this.props.toggleGridView();
+      this.props.pause();
   }
 
     render() {

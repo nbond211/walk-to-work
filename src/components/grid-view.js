@@ -8,7 +8,8 @@ class GridView extends Component {
     static propTypes = {
         photoData: PropTypes.object.isRequired,
         setIndex: PropTypes.func.isRequired,
-        toggleGridView: PropTypes.func.isRequired
+        toggleGridView: PropTypes.func.isRequired,
+        pause: PropTypes.func.isRequired
     }
 
     constructor(props) {
@@ -18,7 +19,7 @@ class GridView extends Component {
   }
 
     render() {
-        const {photoData, setIndex, toggleGridView} = this.props;
+        const {photoData, setIndex, toggleGridView, pause} = this.props;
 
         const tiles = this.photos.map((photo, index) => {
             const data = photoData[photo];
@@ -31,6 +32,7 @@ class GridView extends Component {
                 dateTime={dateTime}
                 setIndex={setIndex}
                 toggleGridView={toggleGridView}
+                pause={pause}
                 />
             );
         });
