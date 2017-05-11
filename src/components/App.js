@@ -5,6 +5,7 @@ import photoData from '../photo-data';
 import Day from './day';
 import GridView from './grid-view';
 import TopMenu from './top-menu';
+import InfoModal from './info-modal';
 
 const photos = Object.getOwnPropertyNames(photoData);
 const maxIndex = photos.length - 1;
@@ -82,6 +83,11 @@ class App extends Component {
     this.setState({isGridView: !isGridView});
   }
 
+  toggleModal = () => {
+    const {isModalVisible} = this.state;
+    this.setState({isModalVisible: !isModalVisible});
+  }
+
   componentDidMount() {
     window.addEventListener('keydown', event => {
       if (event.key === 'ArrowLeft') {
@@ -93,17 +99,22 @@ class App extends Component {
   }
 
   render() {
-    const {index, isPlaying, isGridView} = this.state;
+    const {index, isPlaying, isGridView, isModalVisible} = this.state;
     const photo = photoData[photos[index]];
 
     return (
       <div>
+        <InfoModal
+        isModalVisible={isModalVisible}
+        toggleModal={this.toggleModal} 
+        />
         <TopMenu
           isPlaying={isPlaying}
           isGridView={isGridView}
           pause={this.pause}
           autoPlay={this.autoPlay}
-          toggleGridView={this.toggleGridView} 
+          toggleGridView={this.toggleGridView}
+          toggleModal={this.toggleModal}
         />
         {!isGridView &&
         <Day

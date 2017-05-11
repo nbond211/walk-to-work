@@ -7,11 +7,12 @@ class TopMenu extends Component {
     isGridView: PropTypes.bool,
     pause: PropTypes.func,
     autoPlay: PropTypes.func,
-    toggleGridView: PropTypes.func
+    toggleGridView: PropTypes.func,
+    toggleModal: PropTypes.func.isRequired
   }
 
   render() {
-      const {isPlaying, isGridView, pause, autoPlay, toggleGridView} = this.props;
+      const {isPlaying, isGridView, pause, autoPlay, toggleGridView, toggleModal} = this.props;
 
       let playButton;
     if (isPlaying) {
@@ -45,7 +46,7 @@ class TopMenu extends Component {
 
     return (
         <div className="top-menu">
-          <button className="button">
+          <button onClick={toggleModal} className="button">
             <i className="material-icons button-icon">info_outline</i>
           </button>
           {playButton}
