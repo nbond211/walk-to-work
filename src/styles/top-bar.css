@@ -26,3 +26,51 @@
     justify-content: center;
     padding: 25px;
 }
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .topBar {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1200px) {
+    .topBar {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 950px) {
+    .topBar {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 820px) {
+    .topBar {
+        font-size: 40px;
+    }
+
+    .gpsContainer {
+        display: none;
+    }
+
+    .dateTimeContainer {
+        border-right-style: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .topBar {
+        font-size: 25px;
+    }
+
+    .gpsContainer {
+        display: none;
+    }
+
+    .dateTimeContainer {
+        border-right-style: none;
+        width: 100%;
+    }
+}
