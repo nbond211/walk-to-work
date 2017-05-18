@@ -32,7 +32,7 @@ class Tile extends Component {
         const labelColor = contrast(color) === 'light' ? '#000' : '#fff'; 
 
         return (
-            <div className="tile-container col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <div className="tile-container col-xs-12 col-sm-5 col-md-4 col-lg-3">
                 <div onClick={this.handleClick} style={{backgroundColor: color}} className="tile">
                     <span style={{color: labelColor}} className="tile-label">{formatDateTimeForTile(dateTime)}</span>
                 </div>

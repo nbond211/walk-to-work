@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .5s;
+    transition: .5s;
 }
 
 .tile:hover {
@@ -26,5 +26,5 @@
 }
 
 .tile-label {
-    font-size: 3vw;
+    font-size: 50px;;
 }
