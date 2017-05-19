@@ -88,6 +88,10 @@ class App extends Component {
     this.setState({isModalVisible: !isModalVisible});
   }
 
+  hideModal = () => {
+    this.setState({isModalVisible: false});
+  }
+
   componentDidMount() {
     window.addEventListener('keydown', event => {
       if (event.key === 'ArrowLeft') {
@@ -106,7 +110,8 @@ class App extends Component {
       <div>
         <InfoModal
         isModalVisible={isModalVisible}
-        toggleModal={this.toggleModal} 
+        toggleModal={this.toggleModal}
+        hideModal={this.hideModal}
         />
         <TopMenu
           isPlaying={isPlaying}

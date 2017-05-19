@@ -1,10 +1,27 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes} from 'react';
+import ReactDOM from 'react-dom';
 import '../styles/info-modal.css';
 
 class InfoModal extends Component {
   static propTypes = {
-    isModalVisible: PropTypes.bool.isRequired,
-    toggleModal: PropTypes.func.isRequired
+    isModalVisible: PropTypes.bool,
+    toggleModal: PropTypes.func.isRequired,
+    hideModal: PropTypes.func.isRequired
+  }
+
+  handleClickOutside = event => {
+    const domNode = ReactDOM.findDOMNode(this);
+    if ((!domNode || !domNode.contains(event.target))) {
+        this.props.hideModal();
+    }
+  }
+
+  componentDidMount() {
+    document.addEventListener('click', this.handleClickOutside.bind(this), true);
+  }
+
+componentWillUnmount() {
+    document.removeEventListener('click', this.handleClickOutside.bind(this), true);
   }
 
   render() {
