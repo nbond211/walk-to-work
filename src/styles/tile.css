@@ -28,3 +28,35 @@
 .tile-label {
     font-size: 50px;;
 }
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+    .tile {
+        height: 175px;
+        width: 175px;
+    }
+
+    .tile:hover {
+        height: 200px;
+        width: 200px;
+    }
+
+    .tile-label {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .tile {
+        height: 100px;
+        width: 100px;
+    }
+
+    .tile:hover {
+        height: 125px;
+        width: 125px;
+    }
+
+    .tile-label {
+        font-size: 25px;
+    }
+}
