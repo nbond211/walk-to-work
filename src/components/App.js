@@ -15,7 +15,7 @@ class App extends Component {
     super(props);
     autoBind(this);
     this.state = {
-      index: 34
+      index: 0
     };
   }
 
