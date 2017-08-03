@@ -1,14 +1,8 @@
 .color-box {
     height: 50vh;
     width: 12vw;
-    border-right-style: solid;
-    border-right-width: 10px;
-    border-bottom-style: solid;
-    border-bottom-width: 10px;
-    border-top-style: solid;
-    border-top-width: 10px;
-    border-left-style: solid;
-    border-left-width: 10px;
+    border-width: 10px;
+    border-style: solid;
 }
 
 .color-label {
