@@ -33,7 +33,7 @@ componentWillUnmount() {
                 <i className="material-icons">close</i>
             </button>
             <p>
-                From 1.31.17 until 6.30.17, I walked to work every morning and took a photo at a different location during my commute. 
+                From 1.31.17 until 6.28.17, I walked to work every morning and took a photo at a different location during my commute. 
                 I extracted prominent colors, date time information, and gps coordinates from each photo. Here is my walk to work.
             </p>
         </div>
