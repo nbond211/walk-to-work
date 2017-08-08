@@ -13,6 +13,7 @@ From 1.31.17 until 6.28.17, I walked to work every morning in Brooklyn, NY and t
 ## Starting the server
 1. `cd` into the `src` directory
 2. run `npm start`
+3. the application will be running at `localhost:3000`
 
 ## Updating the photo data
 1. `cd` into the `src` directory
